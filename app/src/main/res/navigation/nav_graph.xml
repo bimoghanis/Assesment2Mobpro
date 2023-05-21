@@ -1,0 +1,27 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.d3if3048.assesment1.Main.MainActivity"
+        android:label="Main Fragment">
+        <action
+            android:id="@+id/action_mainFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_riwayatFragment"
+            app:destination="@id/riwayatFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.d3if3048.assesment1.AboutFragment"
+        android:label="About Fragment" />
+
+    <fragment
+        android:id="@+id/riwayatFragment"
+        android:name="com.d3if3048.assesment1.RiwayatFragment"
+        android:label="Riwayat Fragment" />
+</navigation>
